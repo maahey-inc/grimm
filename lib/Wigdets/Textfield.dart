@@ -15,19 +15,22 @@ class Textfield extends StatelessWidget {
     return TextField(
       controller: controller,
       keyboardType: keyboardtype,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+      ),
       cursorColor: Colors.white,
       decoration: InputDecoration(
-        fillColor: Colors.grey[700],
-        filled: true,
+        //fillColor: Colors.grey[700],
+        //filled: true,
         hintText: hinttext,
-        hintStyle: TextStyle(color: Colors.white, fontSize: 13),
+        hintStyle: TextStyle(color: Colors.white, fontSize: 20),
         focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: BorderSide(color: Colors.white, width: 2),
           borderRadius: BorderRadius.circular(5),
         ),
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: BorderSide(color: Colors.white, width: 2),
           borderRadius: BorderRadius.circular(5),
         ),
       ),

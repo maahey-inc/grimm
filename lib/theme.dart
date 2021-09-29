@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 //import 'constants.dart';
 
-ThemeData theme() {
+ThemeData theme(BuildContext context) {
   return ThemeData(
-    scaffoldBackgroundColor: Colors.white,
-    fontFamily: "Muli",
+    scaffoldBackgroundColor: Color(0xff2A2D36),
+    //fontFamily: "Muli",
     appBarTheme: appBarTheme(),
-    //textTheme: textTheme(),
+    textTheme: GoogleFonts.robotoTextTheme(
+      Theme.of(context).textTheme,
+    ),
     inputDecorationTheme: inputDecorationTheme(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
@@ -31,23 +34,25 @@ InputDecorationTheme inputDecorationTheme() {
   );
 }
 
-TextTheme textTheme() {
-  return TextTheme(
-      bodyText1: TextStyle(color: Colors.white),
-      bodyText2: TextStyle(color: Colors.white),
-      headline3: TextStyle(
-        color: Colors.white,
-        fontSize: 20,
-        fontWeight: FontWeight.w500,
-      ));
-}
+// TextTheme textTheme() {
+// return
+//   // return TextTheme(
+//   //   bodyText1: TextStyle(color: Colors.white),
+//   //   bodyText2: TextStyle(color: Colors.white),
+//   //   headline3: TextStyle(
+//   //     color: Colors.white,
+//   //     fontSize: 20,
+//   //     fontWeight: FontWeight.w500,
+//   //   ),
+//   // );
+// }
 
 AppBarTheme appBarTheme() {
   return AppBarTheme(
     centerTitle: true,
-    color: Colors.black,
+    backgroundColor: Color(0xff2A2D36),
     elevation: 10,
-    shadowColor: Colors.grey[400],
+    shadowColor: Colors.transparent,
     brightness: Brightness.dark,
     iconTheme: IconThemeData(color: Colors.white),
     textTheme: TextTheme(

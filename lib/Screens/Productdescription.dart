@@ -7,7 +7,7 @@ class Productdescription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text("Grimm"),
       ),
@@ -54,6 +54,7 @@ class Productdescription extends StatelessWidget {
                                     ),
                                   ),
                                   Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         "Buy",
@@ -118,6 +119,7 @@ class Productdescription extends StatelessWidget {
                                   ),
                                 ),
                                 Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "Sell",
@@ -173,11 +175,15 @@ class Productdescription extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(
+                    height: 5,
+                  ),
                   Text(
                     "Composer/Writer",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xffBB0611),
                       fontSize: 16,
+                      decoration: TextDecoration.underline,
                       //fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -198,22 +204,33 @@ class Productdescription extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        color: Colors.red,
-                        child: Text(
-                          "Product Details",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ],
+                  Text(
+                    "Product Details",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                  Divider(
+                    color: Colors.white,
+                  ),
+                  // Row(
+                  //   children: [
+                  //     Container(
+                  //       padding: EdgeInsets.all(10),
+                  //       color: Colors.red,
+                  //       child: Text(
+                  //         "Product Details",
+                  //         style: TextStyle(
+                  //           color: Colors.white,
+                  //           fontSize: 18,
+                  //           fontWeight: FontWeight.bold,
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                   SizedBox(
                     height: 20,
                   ),
@@ -221,10 +238,10 @@ class Productdescription extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Type",
+                        "Genre",
                         style: TextStyle(
-                          color: Colors.grey[400],
-                          fontSize: 18,
+                          color: Color(0xffBB0611),
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -232,7 +249,7 @@ class Productdescription extends StatelessWidget {
                         "Pop",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -245,10 +262,34 @@ class Productdescription extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Price",
+                        "Length",
                         style: TextStyle(
-                          color: Colors.grey[400],
-                          fontSize: 18,
+                          color: Color(0xffBB0611),
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "3:24",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.grey[500],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Starting Price",
+                        style: TextStyle(
+                          color: Color(0xffBB0611),
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -256,7 +297,7 @@ class Productdescription extends StatelessWidget {
                         "\$100",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -271,8 +312,8 @@ class Productdescription extends StatelessWidget {
                       Text(
                         "Release Date",
                         style: TextStyle(
-                          color: Colors.grey[400],
-                          fontSize: 18,
+                          color: Color(0xffBB0611),
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -280,7 +321,7 @@ class Productdescription extends StatelessWidget {
                         "21/04/26",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -290,12 +331,15 @@ class Productdescription extends StatelessWidget {
                     color: Colors.grey[500],
                   ),
                   Text(
-                    "Product Description",
+                    "Description",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xffBB0611),
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Text(
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
