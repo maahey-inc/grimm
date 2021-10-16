@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grimm/Screens/Buysellscreen.dart';
+import 'package:grimm/Wigdets/Button.dart';
 
 class Productdescription extends StatelessWidget {
   //const Productdescription({ Key? key }) : super(key: key);
@@ -14,166 +16,193 @@ class Productdescription extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => BuySell(),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "\$177",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                ),
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 10, vertical: 15),
-                                    child: Container(
-                                      width: 1,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        "Buy",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20,
-                                        ),
-                                      ),
-                                      // SizedBox(
-                                      //   height: 1,
-                                      // ),
-                                      Text(
-                                        "Or Bid",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          //fontSize: 20,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Colors.green[900],
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 15,
-                  ),
-                  Expanded(
-                    child: Container(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "\$213",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 15),
-                                  child: Container(
-                                    width: 1,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "Sell",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                                    // SizedBox(
-                                    //   height: 1,
-                                    // ),
-                                    Text(
-                                      "Or Ask",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        //fontSize: 20,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Divider(
-            color: Colors.grey[50],
-          ),
+          // Container(
+          //   child: Padding(
+          //     padding: const EdgeInsets.all(20),
+          //     child: Row(
+          //       children: [
+          //         Expanded(
+          //           child: GestureDetector(
+          //             onTap: () {
+          //               Navigator.push(
+          //                 context,
+          //                 MaterialPageRoute(
+          //                   builder: (context) => BuySell(),
+          //                 ),
+          //               );
+          //             },
+          //             child: Container(
+          //               child: Padding(
+          //                 padding: const EdgeInsets.symmetric(horizontal: 20),
+          //                 child: Row(
+          //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //                   children: [
+          //                     Text(
+          //                       "\$177",
+          //                       style: TextStyle(
+          //                         color: Colors.white,
+          //                         fontWeight: FontWeight.bold,
+          //                         fontSize: 20,
+          //                       ),
+          //                     ),
+          //                     Row(
+          //                       children: [
+          //                         Padding(
+          //                           padding: const EdgeInsets.symmetric(
+          //                               horizontal: 10, vertical: 15),
+          //                           child: Container(
+          //                             width: 1,
+          //                             color: Colors.white,
+          //                           ),
+          //                         ),
+          //                         Column(
+          //                           mainAxisAlignment: MainAxisAlignment.center,
+          //                           children: [
+          //                             Text(
+          //                               "Buy",
+          //                               style: TextStyle(
+          //                                 color: Colors.white,
+          //                                 fontWeight: FontWeight.bold,
+          //                                 fontSize: 20,
+          //                               ),
+          //                             ),
+          //                             // SizedBox(
+          //                             //   height: 1,
+          //                             // ),
+          //                             Text(
+          //                               "Or Bid",
+          //                               style: TextStyle(
+          //                                 color: Colors.white,
+          //                                 fontWeight: FontWeight.bold,
+          //                                 //fontSize: 20,
+          //                               ),
+          //                             ),
+          //                           ],
+          //                         ),
+          //                       ],
+          //                     )
+          //                   ],
+          //                 ),
+          //               ),
+          //               height: 60,
+          //               decoration: BoxDecoration(
+          //                 color: Colors.green[900],
+          //                 borderRadius: BorderRadius.circular(10),
+          //               ),
+          //             ),
+          //           ),
+          //         ),
+          //         SizedBox(
+          //           width: 15,
+          //         ),
+          //         Expanded(
+          //           child: Container(
+          //             child: Padding(
+          //               padding: const EdgeInsets.symmetric(horizontal: 20),
+          //               child: Row(
+          //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //                 children: [
+          //                   Text(
+          //                     "\$213",
+          //                     style: TextStyle(
+          //                       color: Colors.white,
+          //                       fontWeight: FontWeight.bold,
+          //                       fontSize: 20,
+          //                     ),
+          //                   ),
+          //                   Row(
+          //                     children: [
+          //                       Padding(
+          //                         padding: const EdgeInsets.symmetric(
+          //                             horizontal: 10, vertical: 15),
+          //                         child: Container(
+          //                           width: 1,
+          //                           color: Colors.white,
+          //                         ),
+          //                       ),
+          //                       Column(
+          //                         mainAxisAlignment: MainAxisAlignment.center,
+          //                         children: [
+          //                           Text(
+          //                             "Sell",
+          //                             style: TextStyle(
+          //                               color: Colors.white,
+          //                               fontWeight: FontWeight.bold,
+          //                               fontSize: 20,
+          //                             ),
+          //                           ),
+          //                           // SizedBox(
+          //                           //   height: 1,
+          //                           // ),
+          //                           Text(
+          //                             "Or Ask",
+          //                             style: TextStyle(
+          //                               color: Colors.white,
+          //                               fontWeight: FontWeight.bold,
+          //                               //fontSize: 20,
+          //                             ),
+          //                           ),
+          //                         ],
+          //                       ),
+          //                     ],
+          //                   )
+          //                 ],
+          //               ),
+          //             ),
+          //             height: 60,
+          //             decoration: BoxDecoration(
+          //               color: Colors.red,
+          //               borderRadius: BorderRadius.circular(10),
+          //             ),
+          //           ),
+          //         )
+          //       ],
+          //     ),
+          //   ),
+          // ),
+          // Divider(
+          //   color: Colors.grey[50],
+          // ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.only(
+                top: 20,
+                left: 20,
+                right: 20,
+              ),
               child: ListView(
                 //crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    "Music/Song Name",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Music/Song Name",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              CupertinoIcons.share,
+                              color: Colors.red,
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.more_vert_outlined,
+                              color: Colors.red,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 5,
@@ -349,6 +378,29 @@ class Productdescription extends StatelessWidget {
                       //fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Button(
+                      background: Colors.red,
+                      foreground: Colors.white,
+                      ontap: () {},
+                      text: "Buy It Now"),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Button(
+                      background: Colors.white,
+                      foreground: Colors.red,
+                      ontap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BuySell(),
+                          ),
+                        );
+                      },
+                      text: "Bid")
                 ],
               ),
             ),

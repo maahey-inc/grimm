@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grimm/Screens/Home.dart';
 import 'package:grimm/Screens/Productdescription.dart';
 import 'package:grimm/Screens/Signup.dart';
 import 'package:grimm/Screens/Signupoption.dart';
@@ -80,7 +81,7 @@ class Login extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Productdescription(),
+                        builder: (context) => Home(),
                       ),
                     );
                   },

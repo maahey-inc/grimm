@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grimm/Providers/HomeProvider.dart';
 import 'package:grimm/Providers/Signupprovider.dart';
 import 'package:grimm/Screens/login.dart';
 import 'package:grimm/theme.dart';
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<Signupprovider>(
           create: (context) => Signupprovider(),
+        ),
+        ChangeNotifierProvider<HomeProvier>(
+          create: (context) => HomeProvier(),
         ),
       ],
       child: MaterialApp(

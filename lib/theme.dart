@@ -2,7 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //import 'constants.dart';
-
+TextStyle style2 = TextStyle(
+  color: Colors.white,
+  fontSize: 18,
+  fontWeight: FontWeight.w500,
+);
+TextStyle style1 = TextStyle(
+  color: Colors.white,
+  fontSize: 24,
+  fontWeight: FontWeight.w500,
+);
+TextStyle style3 = TextStyle(
+  color: Colors.white,
+  fontSize: 16,
+  fontWeight: FontWeight.w500,
+);
+TextStyle style4 = TextStyle(
+  color: Colors.white,
+  fontSize: 14,
+  // fontWeight: FontWeight.w500,
+);
 ThemeData theme(BuildContext context) {
   return ThemeData(
     scaffoldBackgroundColor: Color(0xff2A2D36),

@@ -1,5 +1,6 @@
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
 import 'package:flutter/material.dart';
+import 'package:grimm/Wigdets/Button.dart';
 
 class BuySell extends StatelessWidget {
   // const BuySell({ Key? key }) : super(key: key);
@@ -7,7 +8,7 @@ class BuySell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       appBar: AppBar(
         title: Column(
           children: [
@@ -53,72 +54,14 @@ class BuySell extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Highest Bid: ",
-                    style: TextStyle(
-                      color: Colors.white,
-                      //fontWeight: FontWeight.bold,
-                      fontSize: 12,
-                    ),
-                  ),
-                  Text(
                     "\$100",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 12,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 5),
-                    child: Container(
-                      height: 15,
-                      width: 1,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    "Lowest Ask: ",
-                    style: TextStyle(
-                      color: Colors.white,
-                      //fontWeight: FontWeight.bold,
-                      fontSize: 12,
-                    ),
-                  ),
-                  Text(
-                    "\$100",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12,
+                      fontSize: 20,
                     ),
                   ),
                 ],
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              CustomSlidingSegmentedControl<int>(
-                isStretch: true,
-                //fixedWidth: MediaQuery.of(context).size.width / 2.5,
-                thumbColor: Colors.green[900],
-                innerPadding: 0,
-                //textColor: Colors.white,
-                children: {
-                  0: Text(
-                    'Place Bid',
-                    //textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  1: Text(
-                    'Buy Now',
-                    textAlign: TextAlign.center,
-                  ),
-                },
-                duration: Duration(milliseconds: 200),
-                radius: 30.0,
-                onValueChanged: (index) {
-                  print(index);
-                },
               ),
               SizedBox(
                 height: 20,
@@ -132,13 +75,22 @@ class BuySell extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    height: 40,
+                    height: 41,
                     width: 40,
                     decoration: BoxDecoration(
-                        color: Color(
-                          0xFF494949,
+                      color: Colors.red,
+                      border: Border.all(
+                        color: Color(0xffA5ACAF),
+                      ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(
+                          10,
                         ),
-                        border: Border.all(color: Color(0xffA5ACAF))),
+                        bottomLeft: Radius.circular(
+                          10,
+                        ),
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: Container(
@@ -149,19 +101,29 @@ class BuySell extends StatelessWidget {
                           child: Text(
                             "Enter Bid",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22,
-                                color: Colors.grey),
+                                //fontWeight: FontWeight.bold,
+                                //fontSize: 22,
+                                //color: Colors.grey,
+                                ),
                           ),
                         ),
                       ),
                       height: 40,
                       width: 40,
                       decoration: BoxDecoration(
-                          color: Color(
-                            0xFF494949,
+                        color: Colors.white,
+                        border: Border.all(
+                          color: Color(0xffA5ACAF),
+                        ),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(
+                            10,
                           ),
-                          border: Border.all(color: Color(0xffA5ACAF))),
+                          bottomRight: Radius.circular(
+                            10,
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],
@@ -173,15 +135,56 @@ class BuySell extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Processing Fee",
+                    "Pay With:",
                     style: TextStyle(
-                      color: Colors.grey[400],
+                      color: Colors.red,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+              Divider(
+                color: Colors.grey[500],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Processing Fee*",
+                    style: TextStyle(
+                      color: Colors.red,
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
                     "+\$18.00",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Tax*",
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "\$6.00",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -197,7 +200,7 @@ class BuySell extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Total",
+                    "Order Total",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
@@ -214,10 +217,54 @@ class BuySell extends StatelessWidget {
                   ),
                 ],
               ),
-              RaisedButton(
-                onPressed: () {},
-                child: Text("Next"),
-                color: Colors.red,
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Bid Expiration: 30 Days",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      //fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(
+                    Icons.mode_edit_outline_outlined,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Email Address: abc@gmail.com",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      //fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(
+                    Icons.mode_edit_outline_outlined,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Button(
+                background: Colors.red,
+                foreground: Colors.white,
+                ontap: () {},
+                text: "Review Bid",
               )
             ],
           ),

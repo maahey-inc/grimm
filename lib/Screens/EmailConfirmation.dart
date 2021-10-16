@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grimm/Screens/Home.dart';
 import 'package:grimm/Screens/Productdescription.dart';
 
 class EmailConfirmation extends StatelessWidget {
@@ -77,7 +78,7 @@ class EmailConfirmation extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Productdescription(),
+                        builder: (context) => Home(),
                       ),
                     );
                   },

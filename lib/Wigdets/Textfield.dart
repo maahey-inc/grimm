@@ -21,6 +21,8 @@ class Textfield extends StatelessWidget {
       ),
       cursorColor: Colors.white,
       decoration: InputDecoration(
+        isDense: true,
+        contentPadding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
         //fillColor: Colors.grey[700],
         //filled: true,
         hintText: hinttext,
