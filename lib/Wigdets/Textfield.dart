@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Textfield extends StatelessWidget {
-  TextEditingController controller = new TextEditingController();
-  TextInputType keyboardtype;
-  String hinttext;
+  TextEditingController? controller = new TextEditingController();
+  TextInputType? keyboardtype;
+  String? hinttext;
   Textfield({
     this.controller,
     this.keyboardtype = TextInputType.name,

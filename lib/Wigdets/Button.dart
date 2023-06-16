@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  Function ontap;
+  Function() ontap;
   String text;
   Color foreground;
   Color background;
 
   Button({
-    @required this.background,
-    @required this.foreground,
-    @required this.ontap,
-    @required this.text,
+    required this.background,
+    required this.foreground,
+    required this.ontap,
+    required this.text,
   });
 
   @override
