@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/Home.dart';
-import 'package:grimm/Screens/Productdescription.dart';
+import '/Screens/Home.dart';
+import '/Screens/Productdescription.dart';
 
 class EmailConfirmation extends StatelessWidget {
   // const EmailConfirmation({ Key? key }) : super(key: key);

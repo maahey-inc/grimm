@@ -1,4 +1,4 @@
-package com.wesdok.grimm
+package com.example.grim
 
 import io.flutter.embedding.android.FlutterActivity
 

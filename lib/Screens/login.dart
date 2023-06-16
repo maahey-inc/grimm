@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/Home.dart';
-import 'package:grimm/Screens/Productdescription.dart';
-import 'package:grimm/Screens/Signup.dart';
-import 'package:grimm/Screens/Signupoption.dart';
-import 'package:grimm/Wigdets/Textfield.dart';
+import '/Screens/Home.dart';
+import '/Screens/Signupoption.dart';
+import '/Wigdets/Textfield.dart';
 
 class Login extends StatelessWidget {
   //const Login({ Key? key }) : super(key: key);

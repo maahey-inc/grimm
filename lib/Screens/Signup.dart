@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Providers/Signupprovider.dart';
-import 'package:grimm/Screens/EmailConfirmation.dart';
-import 'package:grimm/Screens/login.dart';
-import 'package:grimm/Wigdets/Textfield.dart';
+import '../Providers/Signupprovider.dart';
+import '/Screens/EmailConfirmation.dart';
+import '/Screens/login.dart';
+import '/Wigdets/Textfield.dart';
 import 'package:provider/provider.dart';
 
 import 'Signupoption.dart';

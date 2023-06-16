@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/NewReview.dart';
-import 'package:grimm/Wigdets/Button.dart';
+import '/Screens/NewReview.dart';
+import '/Wigdets/Button.dart';
 
 class AboutUs extends StatelessWidget {
   //const AboutUs({ Key? key }) : super(key: key);

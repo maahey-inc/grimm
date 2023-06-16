@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Providers/HomeProvider.dart';
-import 'package:grimm/Providers/Signupprovider.dart';
-import 'package:grimm/Screens/login.dart';
-import 'package:grimm/theme.dart';
+import '/Providers/HomeProvider.dart';
+import '/Providers/Signupprovider.dart';
+import '/Screens/login.dart';
+import '/theme.dart';
 import 'package:provider/provider.dart';
 
 void main() {

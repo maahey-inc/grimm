@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/theme.dart';
+import '/theme.dart';
 
 class Personalinformation extends StatelessWidget {
   // const Personalinformation({ Key? key }) : super(key: key);

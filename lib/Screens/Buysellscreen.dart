@@ -1,6 +1,6 @@
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
 import 'package:flutter/material.dart';
-import 'package:grimm/Wigdets/Button.dart';
+import '/Wigdets/Button.dart';
 
 class BuySell extends StatelessWidget {
   // const BuySell({ Key? key }) : super(key: key);

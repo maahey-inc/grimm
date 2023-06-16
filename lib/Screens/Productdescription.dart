@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/Buysellscreen.dart';
-import 'package:grimm/Wigdets/Button.dart';
+import '/Screens/Buysellscreen.dart';
+import '/Wigdets/Button.dart';
 
 class Productdescription extends StatelessWidget {
   //const Productdescription({ Key? key }) : super(key: key);

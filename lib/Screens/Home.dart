@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:grimm/Providers/HomeProvider.dart';
-import 'package:grimm/Screens/AboutUs.dart';
-import 'package:grimm/Screens/More.dart';
-import 'package:grimm/Screens/Productdescription.dart';
+import '/Providers/HomeProvider.dart';
+import '/Screens/AboutUs.dart';
+import '/Screens/More.dart';
+import '/Screens/Productdescription.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:provider/provider.dart';
 

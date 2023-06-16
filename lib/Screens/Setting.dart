@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/Personalinformation.dart';
+import '/Screens/Personalinformation.dart';
 
 class Setting extends StatelessWidget {
   // const Setting({ Key? key }) : super(key: key);

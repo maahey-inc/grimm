@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Providers/Signupprovider.dart';
-import 'package:grimm/Screens/Signup.dart';
+import '/Screens/Signup.dart';
 import 'package:provider/provider.dart';
+
+import '../Providers/Signupprovider.dart';
 
 enum User { prod, user }
 

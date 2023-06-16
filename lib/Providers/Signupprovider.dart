@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Screens/Signupoption.dart';
+import '/Screens/Signupoption.dart';
 
 class Signupprovider extends ChangeNotifier {
   User usertype = User.prod;

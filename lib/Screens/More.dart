@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grimm/Wigdets/Button.dart';
+import '/Wigdets/Button.dart';
 
 import 'Setting.dart';
 
